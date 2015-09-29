@@ -7,7 +7,8 @@ import com.sun.nio.zipfs.ZipFileSystem;
  * Created by Administrator on 2015/9/29.
  */
 public class GClassLoader {
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         ClassLoader bootstrapClassLoader = String.class.getClassLoader();
         System.out.println(bootstrapClassLoader);
         System.out.println();
@@ -29,7 +30,6 @@ public class GClassLoader {
         ClassLoader systemClassLoader3 = ClassLoader.getSystemClassLoader();
         System.out.println(systemClassLoader3);
         System.out.println();
-
 
 
         GClassLoaderBean gcb = new GClassLoaderBean();
