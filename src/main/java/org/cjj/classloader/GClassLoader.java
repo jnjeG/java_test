@@ -4,6 +4,7 @@ import com.sun.nio.zipfs.ZipFileStore;
 import com.sun.nio.zipfs.ZipFileSystem;
 
 /**
+ * http://blog.csdn.net/radic_feng/article/details/6897898
  * Created by Administrator on 2015/9/29.
  */
 public class GClassLoader {
