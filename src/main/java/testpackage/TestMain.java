@@ -14,7 +14,7 @@ public class TestMain {
         TestMain t = new TestMain();
         System.out.println(t.getClass());
         System.out.println(t.getClass().getClassLoader());
-        //此注释为下面这一行代码 TestMain.class.getResource("/") == t.getClass().getClassLoader().getResource("")
+        //为下面这一行代码注释 TestMain.class.getResource("/") == t.getClass().getClassLoader().getResource("")
         System.out.println(t.getClass().getClassLoader().getResource(""));
         System.out.println(t.getClass().getClassLoader().getResource("/"));//null
 
