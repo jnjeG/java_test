@@ -1,12 +1,12 @@
-package cjj.concurrent;
+package org.cjj.concurrent;
 
-        import java.util.Random;
+import java.util.Random;
 
 
 /**
  * I write a producer comsumer design pattern using wait() notifyAll() method.
- * @author chenjunjie
  *
+ * @author chenjunjie
  */
 public class ProducerCosumerTest {
     public static void main(String[] args) {
@@ -28,7 +28,6 @@ public class ProducerCosumerTest {
             this.buffer = buffer;
         }
 
-        @Override
         public void run() {
             try {
                 buffer.poll();
@@ -48,8 +47,6 @@ public class ProducerCosumerTest {
         }
 
 
-
-        @Override
         public void run() {
             try {
                 buffer.put();

@@ -1,15 +1,15 @@
-package cjj.concurrent;
+package org.cjj.concurrent;
 
 
-        import java.util.Date;
-        import java.util.LinkedList;
-        import java.util.List;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Examples from Internet.
  * It decribe the producer comsumer design pattern using wait() notifyAll() method.
- * @author chenjunjie
  *
+ * @author chenjunjie
  */
 public class ProducerCosumerTest2 {
     public static void main(String[] args) {
@@ -75,14 +75,12 @@ class Producer implements Runnable {
         this.storge = storage;
     }
 
-    @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
             storge.set();
         }
     }
 }
-
 
 
 class Consumer implements Runnable {
@@ -93,7 +91,6 @@ class Consumer implements Runnable {
         this.storage = storage;
     }
 
-    @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
             storage.get();

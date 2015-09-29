@@ -1,10 +1,10 @@
-package cjj.concurrent;
+package org.cjj.concurrent;
 
 
 /**
  * Wrong code.Don't use it.
- * @author chenjunjie
  *
+ * @author chenjunjie
  */
 public class StopThread {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package cjj.classloader;
+package org.cjj.classloader;
 
 /**
  * Created by Administrator on 2015/9/29.

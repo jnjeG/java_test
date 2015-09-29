@@ -1,4 +1,4 @@
-package cjj.classloader;
+package org.cjj.classloader;
 
 import com.sun.nio.zipfs.ZipFileStore;
 import com.sun.nio.zipfs.ZipFileSystem;
@@ -14,7 +14,7 @@ public class GClassLoader {
         System.out.println();
 
 
-        /**同一个ClassLoader对象**/
+        /**鍚屼竴涓狢lassLoader瀵硅薄**/
         ClassLoader extentionClassLoader = ZipFileStore.class.getClassLoader();
         System.out.println(extentionClassLoader);
         ClassLoader extentionClassLoader2 = ZipFileSystem.class.getClassLoader();
@@ -22,7 +22,7 @@ public class GClassLoader {
         System.out.println();
 
 
-        /**同一个ClassLoader对象**/
+        /**鍚屼竴涓狢lassLoader瀵硅薄**/
         ClassLoader systemClassLoader = GClassLoader.class.getClassLoader();
         System.out.println(systemClassLoader);
         ClassLoader systemClassLoader2 = Thread.currentThread().getContextClassLoader();
